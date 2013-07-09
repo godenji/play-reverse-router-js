@@ -1,0 +1,3 @@
+GET		/index			controllers.bar.Bar.index
+GET		/qstring		controllers.bar.Bar.queryString1(arg: Option[String])
+

@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="default-b31f44"
+		revision="0.1-SNAPSHOT"
+		extra-sbtVersion="0.12"
+		extra-scalaVersion="2.9.2"
+		conf="test"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom"
+		date="20130708230950"/>
+	<dependencies>
+		<module organisation="play" name="sbt-plugin">
+			<revision name="2.2-SNAPSHOT" status="integration" pubdate="20130610194520" resolver="local" artresolver="local" extra-sbtVersion="0.12" extra-scalaVersion="2.9.2" downloaded="false" searched="true" default="false" conf="default(compile), compile" position="0">
+				<metadata-artifact status="no" details="" size="4821" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/scala_2.9.2/sbt_0.12/play/sbt-plugin/ivy-2.2-SNAPSHOT.xml" searched="true" origin-is-local="true" origin-location="/home/newmind/lab/git-sources/Play20/repository/local/play/sbt-plugin/scala_2.9.2/sbt_0.12/2.2-SNAPSHOT/ivys/ivy.xml"/>
+				<caller organisation="default" name="default-b31f44" conf="test, compile, runtime" rev="2.2-SNAPSHOT" rev-constraint-default="2.2-SNAPSHOT" rev-constraint-dynamic="2.2-SNAPSHOT" callerrev="0.1-SNAPSHOT" extra-sbtVersion="0.12" extra-scalaVersion="2.9.2"/>
+				<artifacts>
+					<artifact name="sbt-plugin" type="jar" ext="jar" status="no" details="" size="955674" time="0" location="/home/newmind/bin/Play22/repository/local/play/sbt-plugin/scala_2.9.2/sbt_0.12/2.2-SNAPSHOT/jars/sbt-plugin.jar">
+						<origin-location is-local="true" location="/home/newmind/bin/Play22/repository/local/play/sbt-plugin/scala_2.9.2/sbt_0.12/2.2-SNAPSHOT/jars/sbt-plugin.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.mpeltonen" name="sbt-idea">
+			<revision name="1.4.0" status="release" pubdate="20130416133010" resolver="public" artresolver="public" homepage="http://your.project.url" extra-sbtVersion="0.12" extra-scalaVersion="2.9.2" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="35">
+				<license name="BSD-style" url="http://www.opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3471" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/scala_2.9.2/sbt_0.12/com.github.mpeltonen/sbt-idea/ivy-1.4.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/mpeltonen/sbt-idea_2.9.2_0.12/1.4.0/sbt-idea-1.4.0.pom"/>
+				<caller organisation="play" name="sbt-plugin" conf="compile" rev="1.4.0" rev-constraint-default="1.4.0" rev-constraint-dynamic="1.4.0" callerrev="2.2-SNAPSHOT" extra-sbtVersion="0.12" extra-scalaVersion="2.9.2"/>
+				<artifacts>
+					<artifact name="sbt-idea" type="jar" ext="jar" status="no" details="" size="340865" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/scala_2.9.2/sbt_0.12/com.github.mpeltonen/sbt-idea/jars/sbt-idea-1.4.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/github/mpeltonen/sbt-idea_2.9.2_0.12/1.4.0/sbt-idea-1.4.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-io" name="commons-io">
+			<revision name="2.0.1" status="release" pubdate="20130506133742" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/io/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="36">
+				<metadata-artifact status="no" details="" size="6238" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/commons-io/commons-io/ivy-2.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/commons-io/commons-io/2.0.1/commons-io-2.0.1.pom"/>
+				<caller organisation="com.github.mpeltonen" name="sbt-idea" conf="default, compile, runtime, master" rev="2.0.1" rev-constraint-default="2.0.1" rev-constraint-dynamic="2.0.1" callerrev="1.4.0"/>
+				<artifacts>
+					<artifact name="commons-io" type="jar" ext="jar" status="no" details="" size="159509" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/commons-io/commons-io/jars/commons-io-2.0.1.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/commons-io/commons-io/2.0.1/commons-io-2.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.sbteclipse" name="sbteclipse-plugin">
+			<revision name="2.1.1" status="release" pubdate="20121214125045" resolver="typesafe-ivy-releases" artresolver="typesafe-ivy-releases" extra-sbtVersion="0.12" extra-scalaVersion="2.9.2" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="32">
+				<metadata-artifact status="no" details="" size="1807" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/scala_2.9.2/sbt_0.12/com.typesafe.sbteclipse/sbteclipse-plugin/ivy-2.1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.9.2/sbt_0.12/2.1.1/ivys/ivy.xml"/>
+				<caller organisation="play" name="sbt-plugin" conf="compile" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="2.2-SNAPSHOT" extra-sbtVersion="0.12" extra-scalaVersion="2.9.2"/>
+				<artifacts>
+					<artifact name="sbteclipse-plugin" type="jar" ext="jar" status="no" details="" size="7980" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/scala_2.9.2/sbt_0.12/com.typesafe.sbteclipse/sbteclipse-plugin/jars/sbteclipse-plugin-2.1.1.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.9.2/sbt_0.12/2.1.1/jars/sbteclipse-plugin.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.sbteclipse" name="sbteclipse-core">
+			<revision name="2.1.1" status="release" pubdate="20121214125045" resolver="typesafe-ivy-releases" artresolver="typesafe-ivy-releases" extra-sbtVersion="0.12" extra-scalaVersion="2.9.2" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="33">
+				<metadata-artifact status="no" details="" size="1747" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/scala_2.9.2/sbt_0.12/com.typesafe.sbteclipse/sbteclipse-core/ivy-2.1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbteclipse/sbteclipse-core/scala_2.9.2/sbt_0.12/2.1.1/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.sbteclipse" name="sbteclipse-plugin" conf="compile" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="2.1.1" extra-sbtVersion="0.12" extra-scalaVersion="2.9.2"/>
+				<artifacts>
+					<artifact name="sbteclipse-core" type="jar" ext="jar" status="no" details="" size="256554" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/scala_2.9.2/sbt_0.12/com.typesafe.sbteclipse/sbteclipse-core/jars/sbteclipse-core-2.1.1.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbteclipse/sbteclipse-core/scala_2.9.2/sbt_0.12/2.1.1/jars/sbteclipse-core.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalaz" name="scalaz-core_2.9.2">
+			<revision name="6.0.4" status="release" pubdate="20120414111242" resolver="public" artresolver="public" homepage="http://scalaz.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="34">
+				<license name="BSD-style" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="2512" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.scalaz/scalaz-core_2.9.2/ivy-6.0.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.9.2/6.0.4/scalaz-core_2.9.2-6.0.4.pom"/>
+				<caller organisation="com.typesafe.sbteclipse" name="sbteclipse-core" conf="compile" rev="6.0.4" rev-constraint-default="6.0.4" rev-constraint-dynamic="6.0.4" callerrev="2.1.1"/>
+				<artifacts>
+					<artifact name="scalaz-core_2.9.2" type="jar" ext="jar" status="no" details="" size="4474099" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.scalaz/scalaz-core_2.9.2/jars/scalaz-core_2.9.2-6.0.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.9.2/6.0.4/scalaz-core_2.9.2-6.0.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.contentobjects.jnotify" name="jnotify">
+			<revision name="0.94" status="release" pubdate="20130506134514" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="31">
+				<metadata-artifact status="no" details="" size="2248" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/net.contentobjects.jnotify/jnotify/ivy-0.94.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/net/contentobjects/jnotify/jnotify/0.94/jnotify-0.94.pom"/>
+				<caller organisation="play" name="sbt-plugin" conf="compile" rev="0.94" rev-constraint-default="0.94" rev-constraint-dynamic="0.94" callerrev="2.2-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jnotify" type="jar" ext="jar" status="no" details="" size="659562" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/net.contentobjects.jnotify/jnotify/jars/jnotify-0.94.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/net/contentobjects/jnotify/jnotify/0.94/jnotify-0.94.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.pegdown" name="pegdown">
+			<revision name="1.2.1-withplugins-1" status="release" pubdate="20130506173946" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://pegdown.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="24">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2783" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.pegdown/pegdown/ivy-1.2.1-withplugins-1.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/org/pegdown/pegdown/1.2.1-withplugins-1/pegdown-1.2.1-withplugins-1.pom"/>
+				<caller organisation="play" name="sbt-plugin" conf="compile" rev="1.2.1-withplugins-1" rev-constraint-default="1.2.1-withplugins-1" rev-constraint-dynamic="1.2.1-withplugins-1" callerrev="2.2-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="pegdown" type="jar" ext="jar" status="no" details="" size="62876" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.pegdown/pegdown/jars/pegdown-1.2.1-withplugins-1.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/org/pegdown/pegdown/1.2.1-withplugins-1/pegdown-1.2.1-withplugins-1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.parboiled" name="parboiled-java">
+			<revision name="1.1.4" status="release" pubdate="20121127172702" resolver="public" artresolver="public" homepage="http://parboiled.org" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="25">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3316" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.parboiled/parboiled-java/ivy-1.1.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/parboiled/parboiled-java/1.1.4/parboiled-java-1.1.4.pom"/>
+				<caller organisation="org.pegdown" name="pegdown" conf="default, compile, runtime, master" rev="1.1.4" rev-constraint-default="1.1.4" rev-constraint-dynamic="1.1.4" callerrev="1.2.1-withplugins-1"/>
+				<artifacts>
+					<artifact name="parboiled-java" type="jar" ext="jar" status="no" details="" size="73180" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.parboiled/parboiled-java/jars/parboiled-java-1.1.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/parboiled/parboiled-java/1.1.4/parboiled-java-1.1.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm-util">
+			<revision name="4.1" status="release" pubdate="20121014173900" resolver="public" artresolver="public" homepage="" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="30">
+				<metadata-artifact status="no" details="" size="4374" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.ow2.asm/asm-util/ivy-4.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/ow2/asm/asm-util/4.1/asm-util-4.1.pom"/>
+				<caller organisation="org.parboiled" name="parboiled-java" conf="compile, runtime" rev="4.1" rev-constraint-default="4.1" rev-constraint-dynamic="4.1" callerrev="1.1.4"/>
+				<artifacts>
+					<artifact name="asm-util" type="jar" ext="jar" status="no" details="" size="37599" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.ow2.asm/asm-util/jars/asm-util-4.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/ow2/asm/asm-util/4.1/asm-util-4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm-analysis">
+			<revision name="4.1" status="release" pubdate="20121014173804" resolver="public" artresolver="public" homepage="" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="29">
+				<metadata-artifact status="no" details="" size="4382" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.ow2.asm/asm-analysis/ivy-4.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/ow2/asm/asm-analysis/4.1/asm-analysis-4.1.pom"/>
+				<caller organisation="org.parboiled" name="parboiled-java" conf="compile, runtime" rev="4.1" rev-constraint-default="4.1" rev-constraint-dynamic="4.1" callerrev="1.1.4"/>
+				<artifacts>
+					<artifact name="asm-analysis" type="jar" ext="jar" status="no" details="" size="19812" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.ow2.asm/asm-analysis/jars/asm-analysis-4.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/ow2/asm/asm-analysis/4.1/asm-analysis-4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm-tree">
+			<revision name="4.1" status="release" pubdate="20121014173839" resolver="public" artresolver="public" homepage="" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="28">
+				<metadata-artifact status="no" details="" size="4369" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.ow2.asm/asm-tree/ivy-4.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/ow2/asm/asm-tree/4.1/asm-tree-4.1.pom"/>
+				<caller organisation="org.ow2.asm" name="asm-analysis" conf="compile, runtime" rev="4.1" rev-constraint-default="4.1" rev-constraint-dynamic="4.1" callerrev="4.1"/>
+				<caller organisation="org.ow2.asm" name="asm-util" conf="compile, runtime" rev="4.1" rev-constraint-default="4.1" rev-constraint-dynamic="4.1" callerrev="4.1"/>
+				<caller organisation="org.parboiled" name="parboiled-java" conf="compile, runtime" rev="4.1" rev-constraint-default="4.1" rev-constraint-dynamic="4.1" callerrev="1.1.4"/>
+				<artifacts>
+					<artifact name="asm-tree" type="jar" ext="jar" status="no" details="" size="22162" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.ow2.asm/asm-tree/jars/asm-tree-4.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/ow2/asm/asm-tree/4.1/asm-tree-4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm">
+			<revision name="4.1" status="release" pubdate="20121014173745" resolver="public" artresolver="public" homepage="" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="27">
+				<metadata-artifact status="no" details="" size="3744" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.ow2.asm/asm/ivy-4.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/ow2/asm/asm/4.1/asm-4.1.pom"/>
+				<caller organisation="org.parboiled" name="parboiled-java" conf="compile, runtime" rev="4.1" rev-constraint-default="4.1" rev-constraint-dynamic="4.1" callerrev="1.1.4"/>
+				<caller organisation="org.ow2.asm" name="asm-tree" conf="compile, runtime" rev="4.1" rev-constraint-default="4.1" rev-constraint-dynamic="4.1" callerrev="4.1"/>
+				<artifacts>
+					<artifact name="asm" type="jar" ext="jar" status="no" details="" size="47359" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.ow2.asm/asm/jars/asm-4.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/ow2/asm/asm/4.1/asm-4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.parboiled" name="parboiled-core">
+			<revision name="1.1.4" status="release" pubdate="20121127172718" resolver="public" artresolver="public" homepage="http://parboiled.org" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="26">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2657" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.parboiled/parboiled-core/ivy-1.1.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/parboiled/parboiled-core/1.1.4/parboiled-core-1.1.4.pom"/>
+				<caller organisation="org.parboiled" name="parboiled-java" conf="compile, runtime" rev="1.1.4" rev-constraint-default="1.1.4" rev-constraint-dynamic="1.1.4" callerrev="1.1.4"/>
+				<artifacts>
+					<artifact name="parboiled-core" type="jar" ext="jar" status="no" details="" size="184943" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.parboiled/parboiled-core/jars/parboiled-core-1.1.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/parboiled/parboiled-core/1.1.4/parboiled-core-1.1.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.h2database" name="h2">
+			<revision name="1.3.168" status="release" pubdate="20120713171808" resolver="public" artresolver="public" homepage="http://www.h2database.com" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="23">
+				<license name="The H2 License, Version 1.0" url="http://h2database.com/html/license.html"/>
+				<metadata-artifact status="no" details="" size="2337" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/com.h2database/h2/ivy-1.3.168.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/h2database/h2/1.3.168/h2-1.3.168.pom"/>
+				<caller organisation="play" name="sbt-plugin" conf="compile" rev="1.3.168" rev-constraint-default="1.3.168" rev-constraint-dynamic="1.3.168" callerrev="2.2-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="h2" type="jar" ext="jar" status="no" details="" size="1280753" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/com.h2database/h2/jars/h2-1.3.168.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/h2database/h2/1.3.168/h2-1.3.168.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.avaje.ebeanorm" name="avaje-ebeanorm">
+			<revision name="3.1.2" status="release" pubdate="20121002045001" resolver="public" artresolver="public" homepage="http://www.avaje.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="19">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4612" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.avaje.ebeanorm/avaje-ebeanorm/ivy-3.1.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.1.2/avaje-ebeanorm-3.1.2.pom"/>
+				<caller organisation="play" name="sbt-plugin" conf="compile" rev="3.1.2" rev-constraint-default="3.1.2" rev-constraint-dynamic="3.1.2" callerrev="2.2-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="avaje-ebeanorm" type="jar" ext="jar" status="no" details="" size="2470" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.1.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.1.2/avaje-ebeanorm-3.1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.avaje.ebeanorm" name="avaje-ebeanorm-server">
+			<revision name="3.1.2" status="release" pubdate="20121002044607" resolver="public" artresolver="public" homepage="http://www.avaje.org" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="22">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5689" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.avaje.ebeanorm/avaje-ebeanorm-server/ivy-3.1.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-server/3.1.2/avaje-ebeanorm-server-3.1.2.pom"/>
+				<caller organisation="org.avaje.ebeanorm" name="avaje-ebeanorm" conf="default, compile, runtime, master" rev="3.1.2" rev-constraint-default="3.1.2" rev-constraint-dynamic="3.1.2" callerrev="3.1.2"/>
+				<artifacts>
+					<artifact name="avaje-ebeanorm-server" type="jar" ext="jar" status="no" details="" size="1458306" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.avaje.ebeanorm/avaje-ebeanorm-server/jars/avaje-ebeanorm-server-3.1.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-server/3.1.2/avaje-ebeanorm-server-3.1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.avaje.ebeanorm" name="avaje-ebeanorm-api">
+			<revision name="3.1.1" status="release" pubdate="20120914135621" resolver="public" artresolver="public" homepage="http://www.avaje.org" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="20">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5045" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.avaje.ebeanorm/avaje-ebeanorm-api/ivy-3.1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-api/3.1.1/avaje-ebeanorm-api-3.1.1.pom"/>
+				<caller organisation="org.avaje.ebeanorm" name="avaje-ebeanorm-server" conf="compile, runtime" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="3.1.2"/>
+				<caller organisation="org.avaje.ebeanorm" name="avaje-ebeanorm" conf="default, compile, runtime, master" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="3.1.2"/>
+				<artifacts>
+					<artifact name="avaje-ebeanorm-api" type="jar" ext="jar" status="no" details="" size="289414" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.avaje.ebeanorm/avaje-ebeanorm-api/jars/avaje-ebeanorm-api-3.1.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-api/3.1.1/avaje-ebeanorm-api-3.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.avaje.ebeanorm" name="avaje-ebeanorm-agent">
+			<revision name="3.2.1" status="release" pubdate="20130418125719" resolver="public" artresolver="public" homepage="http://www.avaje.org" downloaded="false" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="21">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4607" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/ivy-3.2.1.xml" searched="true" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/3.2.1/avaje-ebeanorm-agent-3.2.1.pom"/>
+				<caller organisation="org.avaje.ebeanorm" name="avaje-ebeanorm-server" conf="compile, runtime" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="3.1.2"/>
+				<caller organisation="org.avaje.ebeanorm" name="avaje-ebeanorm-api" conf="compile, runtime" rev="[3.1,4)" rev-constraint-default="[3.1,4)" rev-constraint-dynamic="[3.1,4)" callerrev="3.1.1"/>
+				<artifacts>
+					<artifact name="avaje-ebeanorm-agent" type="jar" ext="jar" status="no" details="" size="182383" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/3.2.1/avaje-ebeanorm-agent-3.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="3.1.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="-1">
+				<evicted-by rev="3.2.1"/>
+				<caller organisation="org.avaje.ebeanorm" name="avaje-ebeanorm-server" conf="compile, runtime" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="3.1.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.javascript" name="closure-compiler">
+			<revision name="rr2079.1" status="release" pubdate="20120814183139" resolver="public" artresolver="public" homepage="http://code.google.com/p/closure-compiler/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="17">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3986" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/com.google.javascript/closure-compiler/ivy-rr2079.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/google/javascript/closure-compiler/rr2079.1/closure-compiler-rr2079.1.pom"/>
+				<caller organisation="play" name="sbt-plugin" conf="compile" rev="rr2079.1" rev-constraint-default="rr2079.1" rev-constraint-dynamic="rr2079.1" callerrev="2.2-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="closure-compiler" type="jar" ext="jar" status="no" details="" size="3399207" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/com.google.javascript/closure-compiler/jars/closure-compiler-rr2079.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/google/javascript/closure-compiler/rr2079.1/closure-compiler-rr2079.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.guava" name="guava">
+			<revision name="10.0.1" status="release" pubdate="20111010164457" resolver="public" artresolver="public" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="18">
+				<metadata-artifact status="no" details="" size="3835" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/com.google.guava/guava/ivy-10.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/google/guava/guava/10.0.1/guava-10.0.1.pom"/>
+				<caller organisation="play" name="sbt-plugin" conf="compile" rev="10.0.1" rev-constraint-default="10.0.1" rev-constraint-dynamic="10.0.1" callerrev="2.2-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="guava" type="jar" ext="jar" status="no" details="" size="1501575" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/com.google.guava/guava/jars/guava-10.0.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/google/guava/guava/10.0.1/guava-10.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mozilla" name="rhino">
+			<revision name="1.7R4" status="release" pubdate="20120620120507" resolver="public" artresolver="public" homepage="https://developer.mozilla.org/en/Rhino" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="16">
+				<license name="Mozilla Public License, Version 2.0" url="http://www.mozilla.org/MPL/2.0/index.txt"/>
+				<metadata-artifact status="no" details="" size="2897" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.mozilla/rhino/ivy-1.7R4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/mozilla/rhino/1.7R4/rhino-1.7R4.pom"/>
+				<caller organisation="play" name="sbt-plugin" conf="compile" rev="1.7R4" rev-constraint-default="1.7R4" rev-constraint-dynamic="1.7R4" callerrev="2.2-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="rhino" type="jar" ext="jar" status="no" details="" size="1134765" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.mozilla/rhino/jars/rhino-1.7R4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/mozilla/rhino/1.7R4/rhino-1.7R4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.0.0" status="release" pubdate="20130506134453" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="15">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2725" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/com.typesafe/config/ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/config/1.0.0/config-1.0.0.pom"/>
+				<caller organisation="play" name="sbt-plugin" conf="compile" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="2.2-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="config" type="bundle" ext="jar" status="no" details="" size="185676" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/com.typesafe/config/bundles/config-1.0.0.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/config/1.0.0/config-1.0.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="play" name="console_2.9.2">
+			<revision name="2.2-SNAPSHOT" status="integration" pubdate="20130610194512" resolver="local" artresolver="local" downloaded="false" searched="true" default="false" conf="default(compile), compile" position="12">
+				<metadata-artifact status="no" details="" size="1876" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/play/console_2.9.2/ivy-2.2-SNAPSHOT.xml" searched="true" origin-is-local="true" origin-location="/home/newmind/lab/git-sources/Play20/repository/local/play/console_2.9.2/2.2-SNAPSHOT/ivys/ivy.xml"/>
+				<caller organisation="play" name="sbt-plugin" conf="compile" rev="2.2-SNAPSHOT" rev-constraint-default="2.2-SNAPSHOT" rev-constraint-dynamic="2.2-SNAPSHOT" callerrev="2.2-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="console_2.9.2" type="jar" ext="jar" status="no" details="" size="34897" time="0" location="/home/newmind/bin/Play22/repository/local/play/console_2.9.2/2.2-SNAPSHOT/jars/console_2.9.2.jar">
+						<origin-location is-local="true" location="/home/newmind/bin/Play22/repository/local/play/console_2.9.2/2.2-SNAPSHOT/jars/console_2.9.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="jline" name="jline">
+			<revision name="1.0" status="release" pubdate="20111028035303" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jline.sourceforge.net" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="14">
+				<license name="BSD" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3466" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/jline/jline/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/jline/jline/1.0/jline-1.0.pom"/>
+				<caller organisation="play" name="console_2.9.2" conf="compile" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="2.2-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jline" type="jar" ext="jar" status="no" details="" size="91225" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/jline/jline/jars/jline-1.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/jline/jline/1.0/jline-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="launcher-interface">
+			<revision name="0.12.3" status="release" pubdate="20130328222220" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="13">
+				<metadata-artifact status="no" details="" size="1618" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.scala-sbt/launcher-interface/ivy-0.12.3.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/launcher-interface/0.12.3/ivys/ivy.xml"/>
+				<caller organisation="play" name="console_2.9.2" conf="compile" rev="0.12.3" rev-constraint-default="0.12.3" rev-constraint-dynamic="0.12.3" callerrev="2.2-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="launcher-interface" type="jar" ext="jar" status="no" details="" size="8345" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.scala-sbt/launcher-interface/jars/launcher-interface-0.12.3.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/launcher-interface/0.12.3/jars/launcher-interface.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="play" name="templates-compiler_2.9.2">
+			<revision name="2.2-SNAPSHOT" status="integration" pubdate="20130610194512" resolver="local" artresolver="local" downloaded="false" searched="true" default="false" conf="default(compile), compile" position="10">
+				<metadata-artifact status="no" details="" size="2044" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/play/templates-compiler_2.9.2/ivy-2.2-SNAPSHOT.xml" searched="true" origin-is-local="true" origin-location="/home/newmind/lab/git-sources/Play20/repository/local/play/templates-compiler_2.9.2/2.2-SNAPSHOT/ivys/ivy.xml"/>
+				<caller organisation="play" name="sbt-plugin" conf="compile" rev="2.2-SNAPSHOT" rev-constraint-default="2.2-SNAPSHOT" rev-constraint-dynamic="2.2-SNAPSHOT" callerrev="2.2-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="templates-compiler_2.9.2" type="jar" ext="jar" status="no" details="" size="327887" time="0" location="/home/newmind/bin/Play22/repository/local/play/templates-compiler_2.9.2/2.2-SNAPSHOT/jars/templates-compiler_2.9.2.jar">
+						<origin-location is-local="true" location="/home/newmind/bin/Play22/repository/local/play/templates-compiler_2.9.2/2.2-SNAPSHOT/jars/templates-compiler_2.9.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-compiler">
+			<revision name="2.9.2" status="release" pubdate="20120413143159" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="11">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2665" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.scala-lang/scala-compiler/ivy-2.9.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.9.2/scala-compiler-2.9.2.pom"/>
+				<caller organisation="play" name="templates-compiler_2.9.2" conf="compile" rev="2.9.2" rev-constraint-default="2.9.2" rev-constraint-dynamic="2.9.2" callerrev="2.2-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="play" name="routes-compiler_2.9.2">
+			<revision name="2.2-SNAPSHOT" status="integration" pubdate="20130610194512" resolver="local" artresolver="local" downloaded="false" searched="true" default="false" conf="default(compile), compile" position="4">
+				<metadata-artifact status="no" details="" size="1928" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/play/routes-compiler_2.9.2/ivy-2.2-SNAPSHOT.xml" searched="true" origin-is-local="true" origin-location="/home/newmind/lab/git-sources/Play20/repository/local/play/routes-compiler_2.9.2/2.2-SNAPSHOT/ivys/ivy.xml"/>
+				<caller organisation="play" name="sbt-plugin" conf="compile" rev="2.2-SNAPSHOT" rev-constraint-default="2.2-SNAPSHOT" rev-constraint-dynamic="2.2-SNAPSHOT" callerrev="2.2-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="routes-compiler_2.9.2" type="jar" ext="jar" status="no" details="" size="444668" time="0" location="/home/newmind/bin/Play22/repository/local/play/routes-compiler_2.9.2/2.2-SNAPSHOT/jars/routes-compiler_2.9.2.jar">
+						<origin-location is-local="true" location="/home/newmind/bin/Play22/repository/local/play/routes-compiler_2.9.2/2.2-SNAPSHOT/jars/routes-compiler_2.9.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.scala-incubator.io" name="scala-io-file_2.9.2">
+			<revision name="0.4.1" status="release" pubdate="20120802142754" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jesseeichar.github.com/scala-io-doc/index.html" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="5">
+				<license name="Scala License" url="http://www.scala-lang.org/node/146"/>
+				<metadata-artifact status="no" details="" size="2837" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/com.github.scala-incubator.io/scala-io-file_2.9.2/ivy-0.4.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/scala-incubator/io/scala-io-file_2.9.2/0.4.1/scala-io-file_2.9.2-0.4.1.pom"/>
+				<caller organisation="play" name="sbt-plugin" conf="compile" rev="0.4.1" rev-constraint-default="0.4.1" rev-constraint-dynamic="0.4.1" callerrev="2.2-SNAPSHOT"/>
+				<caller organisation="play" name="console_2.9.2" conf="compile" rev="0.4.1" rev-constraint-default="0.4.1" rev-constraint-dynamic="0.4.1" callerrev="2.2-SNAPSHOT"/>
+				<caller organisation="play" name="templates-compiler_2.9.2" conf="compile" rev="0.4.1" rev-constraint-default="0.4.1" rev-constraint-dynamic="0.4.1" callerrev="2.2-SNAPSHOT"/>
+				<caller organisation="play" name="routes-compiler_2.9.2" conf="compile" rev="0.4.1" rev-constraint-default="0.4.1" rev-constraint-dynamic="0.4.1" callerrev="2.2-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-io-file_2.9.2" type="jar" ext="jar" status="no" details="" size="389888" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/com.github.scala-incubator.io/scala-io-file_2.9.2/jars/scala-io-file_2.9.2-0.4.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/github/scala-incubator/io/scala-io-file_2.9.2/0.4.1/scala-io-file_2.9.2-0.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.scala-incubator.io" name="scala-io-core_2.9.2">
+			<revision name="0.4.1" status="release" pubdate="20120802142811" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jesseeichar.github.com/scala-io-doc/index.html" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="6">
+				<license name="Scala License" url="http://www.scala-lang.org/node/146"/>
+				<metadata-artifact status="no" details="" size="2971" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/com.github.scala-incubator.io/scala-io-core_2.9.2/ivy-0.4.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/scala-incubator/io/scala-io-core_2.9.2/0.4.1/scala-io-core_2.9.2-0.4.1.pom"/>
+				<caller organisation="com.github.scala-incubator.io" name="scala-io-file_2.9.2" conf="default, compile, runtime, master" rev="0.4.1" rev-constraint-default="0.4.1" rev-constraint-dynamic="0.4.1" callerrev="0.4.1"/>
+				<artifacts>
+					<artifact name="scala-io-core_2.9.2" type="jar" ext="jar" status="no" details="" size="1427458" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/com.github.scala-incubator.io/scala-io-core_2.9.2/jars/scala-io-core_2.9.2-0.4.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/github/scala-incubator/io/scala-io-core_2.9.2/0.4.1/scala-io-core_2.9.2-0.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-actor">
+			<revision name="2.0.1" status="release" pubdate="20130506134223" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="9">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2498" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/com.typesafe.akka/akka-actor/ivy-2.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/akka/akka-actor/2.0.1/akka-actor-2.0.1.pom"/>
+				<caller organisation="com.github.scala-incubator.io" name="scala-io-core_2.9.2" conf="compile, runtime" rev="2.0.1" rev-constraint-default="2.0.1" rev-constraint-dynamic="2.0.1" callerrev="0.4.1"/>
+				<artifacts>
+					<artifact name="akka-actor" type="jar" ext="jar" status="no" details="" size="1841418" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/com.typesafe.akka/akka-actor/jars/akka-actor-2.0.1.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/akka/akka-actor/2.0.1/akka-actor-2.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.jsuereth.scala-arm" name="scala-arm_2.9.1">
+			<revision name="1.1" status="release" pubdate="20111221044753" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="8">
+				<metadata-artifact status="no" details="" size="2747" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/com.github.jsuereth.scala-arm/scala-arm_2.9.1/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/jsuereth/scala-arm/scala-arm_2.9.1/1.1/scala-arm_2.9.1-1.1.pom"/>
+				<caller organisation="com.github.scala-incubator.io" name="scala-io-core_2.9.2" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="0.4.1"/>
+				<artifacts>
+					<artifact name="scala-arm_2.9.1" type="jar" ext="jar" status="no" details="" size="68729" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/com.github.jsuereth.scala-arm/scala-arm_2.9.1/jars/scala-arm_2.9.1-1.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/github/jsuereth/scala-arm/scala-arm_2.9.1/1.1/scala-arm_2.9.1-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.9.2" status="release" pubdate="20120413142921" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, master(*), runtime, compile(*), runtime(*), master" position="7">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2391" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.scala-lang/scala-library/ivy-2.9.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.9.2/scala-library-2.9.2.pom"/>
+				<caller organisation="org.scalaz" name="scalaz-core_2.9.2" conf="default, compile, runtime, master" rev="2.9.2" rev-constraint-default="2.9.2" rev-constraint-dynamic="2.9.2" callerrev="6.0.4"/>
+				<caller organisation="com.github.scala-incubator.io" name="scala-io-core_2.9.2" conf="compile, runtime" rev="2.9.2" rev-constraint-default="2.9.2" rev-constraint-dynamic="2.9.2" callerrev="0.4.1"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor" conf="compile, runtime" rev="2.9.2" rev-constraint-default="2.9.2" rev-constraint-dynamic="2.9.1-1" callerrev="2.0.1"/>
+				<caller organisation="com.github.scala-incubator.io" name="scala-io-file_2.9.2" conf="default, compile, runtime, master" rev="2.9.2" rev-constraint-default="2.9.2" rev-constraint-dynamic="2.9.2" callerrev="0.4.1"/>
+				<caller organisation="org.scala-sbt" name="launcher-interface" conf="compile" rev="2.9.2" rev-constraint-default="2.9.2" rev-constraint-dynamic="2.9.2" callerrev="0.12.3"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="default, compile, runtime, master" rev="2.9.2" rev-constraint-default="2.9.2" rev-constraint-dynamic="2.9.2" callerrev="2.9.2"/>
+				<caller organisation="com.github.jsuereth.scala-arm" name="scala-arm_2.9.1" conf="compile, runtime" rev="2.9.2" rev-constraint-default="2.9.2" rev-constraint-dynamic="2.9.1" callerrev="1.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="play" name="play-exceptions">
+			<revision name="2.2-SNAPSHOT" status="integration" pubdate="20130610194512" resolver="local" artresolver="local" downloaded="false" searched="true" default="false" conf="default(compile), compile" position="3">
+				<metadata-artifact status="no" details="" size="1308" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/play/play-exceptions/ivy-2.2-SNAPSHOT.xml" searched="true" origin-is-local="true" origin-location="/home/newmind/bin/Play22/repository/local/play/play-exceptions/2.2-SNAPSHOT/ivys/ivy.xml"/>
+				<caller organisation="play" name="sbt-plugin" conf="compile" rev="2.2-SNAPSHOT" rev-constraint-default="2.2-SNAPSHOT" rev-constraint-dynamic="2.2-SNAPSHOT" callerrev="2.2-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-exceptions" type="jar" ext="jar" status="no" details="" size="4565" time="0" location="/home/newmind/bin/Play22/repository/local/play/play-exceptions/2.2-SNAPSHOT/jars/play-exceptions.jar">
+						<origin-location is-local="true" location="/home/newmind/bin/Play22/repository/local/play/play-exceptions/2.2-SNAPSHOT/jars/play-exceptions.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="play" name="sbt-link">
+			<revision name="2.2-SNAPSHOT" status="integration" pubdate="20130610194512" resolver="local" artresolver="local" downloaded="false" searched="true" default="false" conf="default(compile), compile" position="1">
+				<metadata-artifact status="no" details="" size="1787" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/play/sbt-link/ivy-2.2-SNAPSHOT.xml" searched="true" origin-is-local="true" origin-location="/home/newmind/bin/Play22/repository/local/play/sbt-link/2.2-SNAPSHOT/ivys/ivy.xml"/>
+				<caller organisation="play" name="sbt-plugin" conf="compile" rev="2.2-SNAPSHOT" rev-constraint-default="2.2-SNAPSHOT" rev-constraint-dynamic="2.2-SNAPSHOT" callerrev="2.2-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="sbt-link" type="jar" ext="jar" status="no" details="" size="8492" time="0" location="/home/newmind/bin/Play22/repository/local/play/sbt-link/2.2-SNAPSHOT/jars/sbt-link.jar">
+						<origin-location is-local="true" location="/home/newmind/bin/Play22/repository/local/play/sbt-link/2.2-SNAPSHOT/jars/sbt-link.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.javassist" name="javassist">
+			<revision name="3.16.1-GA" status="release" pubdate="20120306163712" resolver="public" artresolver="public" homepage="http://www.javassist.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="2">
+				<license name="MPL 1.1" url="http://www.mozilla.org/MPL/MPL-1.1.html"/>
+				<license name="LGPL 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="no" details="" size="3064" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.javassist/javassist/ivy-3.16.1-GA.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/javassist/javassist/3.16.1-GA/javassist-3.16.1-GA.pom"/>
+				<caller organisation="play" name="sbt-link" conf="compile" rev="3.16.1-GA" rev-constraint-default="3.16.1-GA" rev-constraint-dynamic="3.16.1-GA" callerrev="2.2-SNAPSHOT"/>
+				<caller organisation="play" name="sbt-plugin" conf="compile" rev="3.16.1-GA" rev-constraint-default="3.16.1-GA" rev-constraint-dynamic="3.16.1-GA" callerrev="2.2-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="javassist" type="jar" ext="jar" status="no" details="" size="659343" time="0" location="/home/newmind/bin/Play22/framework/../repository/cache/org.javassist/javassist/jars/javassist-3.16.1-GA.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/javassist/javassist/3.16.1-GA/javassist-3.16.1-GA.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

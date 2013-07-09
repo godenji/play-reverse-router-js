@@ -1,0 +1,2 @@
+GET		/index			controllers.foo.Foo.index
+GET		/qstring		controllers.foo.Foo.queryString1(arg: Option[String])

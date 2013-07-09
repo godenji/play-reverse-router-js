@@ -1,0 +1,6 @@
+->		/foo	foo.Routes
+->		/bar	bar.Routes
+
+GET		/assets/*file		controllers.Assets.at(path="/public", file)
+
+

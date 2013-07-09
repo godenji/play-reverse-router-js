@@ -1,0 +1,2 @@
+GET		/index			controllers.bar.Bar.index
+GET		/qstring		controllers.bar.Bar.qString(arg1: Option[Int], arg2: Option[String])
