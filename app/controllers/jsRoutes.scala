@@ -57,7 +57,7 @@ object jsRoutes {
 		routes.map{route=>
     	val pkgParts = route.name.replace("controllers.","").split("\\.")
 	    val (subproject,pkg) = 
-	    	(pkgParts(0), pkgParts.tail.mkString(".")) //;println(subproject+": "+pkg)
+	    	(pkgParts(0), pkgParts.mkString(".")) //;println(subproject+": "+pkg)
 	    	
   		val urlReplace = "url:\"" +
   			(mainConf2Tuple.filter(_._2 == subproject) match {
