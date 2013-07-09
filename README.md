@@ -28,8 +28,8 @@ By default js routes are written to public/javascripts, which contains 2 files: 
 
 Usage:
 
-    router.Controller.action(args)
-    e.g. router.Account.edit(id)
+    router.module.Controller.action(args)
+    e.g. router.account.Account.edit(id)
 
 (re)generate routes by running "routesJS" via play> prompt
 
