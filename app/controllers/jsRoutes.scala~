@@ -3,19 +3,6 @@ package controllers
 import play.core.Router.JavascriptReverseRoute
 
 object jsRoutes {
-	
-  /*
-	 * writes js route file(s) to specified UI path
-   */
-	def routes2File(uiPath: String) = {
-	  routeCache.map{ case(file,routes)=>
-	    print2File( new java.io.File(uiPath + file) ) {p=> 
-	      p.println(
-					routesHeader + routesBody(routes) + routesFooter
-			  )
-			}
-	  }
-	}
     
   /*
    * using reflection build up an Array of JS reverse routes
@@ -39,6 +26,19 @@ object jsRoutes {
 					)
 				}
 			}.flatten.filterNot(_.name.contains("Assets")) )
+	  }
+	}
+	
+  /*
+	 * writes js route file(s) to specified UI path
+   */
+	def routes2File(uiPath: String) = {
+	  routeCache.map{ case(file,routes)=>
+	    print2File( new java.io.File(uiPath + file) ) {p=> 
+	      p.println(
+					routesHeader + routesBody(routes) + routesFooter
+			  )
+			}
 	  }
 	}
 	

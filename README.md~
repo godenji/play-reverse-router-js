@@ -1,7 +1,7 @@
 play-reverse-router-js
 ======================
 
-Generates global javascript reverse router as static file at compile time for sub project enabled builds
+Generates global javascript reverse router as static file(s) at compile time for sub project enabled builds
 
 Motivation
 ----------
@@ -27,6 +27,7 @@ You will need to specify relative path to Play framework install by editing the 
 By default js routes are written to public/javascripts, which contains 2 files: jRouter.js (a cleaned up version of Play's obfuscated js router) and routes-all.js, the generated sample routes. Update "absoluteUrl" and "websocketUrl" at bottom of jRouter.js accordingly. I use Grunt JS to combine/minify assets, not sure what Play offers on this front. Either way you'll need to include both files to generate reverse routes.
 
 Usage:
+
     router.Controller.action(args)
     e.g. router.Account.edit(id)
 
