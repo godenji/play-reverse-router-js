@@ -52,7 +52,9 @@ jRouter = {
       method: r.method,
       type: r.method,
       url: r.url,
-      go2: location.href = r.url,
+      go2: function() {
+        return location.href = r.url;
+      },
       absoluteURL: function(s) {
         return secure("http", s) + "www.domain.com" + r.url;
       },
