@@ -19,17 +19,18 @@ object RoutesJS extends TaskUtils {
 	  // assumes your play installation lives in ~/bin/playframework
 		val playPath = List(new java.net.URL( 
 			"file:"+System.getProperty("user.home")+
-			"/bin/playframework/framework/src/play/"+ targetDir
+			"/bin/playframework/framework/src/play/target/"+ targetDir
 		))
 		
 		val appPaths = // i.e. parent project "/" plus "/modules/module-name"
-			(List(projectName) ++ getModules.map(name=>"/module/"+name+"/")).map(x=>
+			(List(projectName+"-main") ++ getModules.map(name=>projectName+"-"+name)).map(module=>
 				new java.net.URL(
 					"file:" + List(sbtDir, module, targetDir).mkString("/")
 				)
 			)
 			
 		val classPath = (appPaths ++ playPath).toArray	
+		classPath foreach println
 		val appLoader: ClassLoader = new java.net.URLClassLoader(classPath, si.loader)
 		val clazz = appLoader.loadClass("controllers.jsRoutes")
 		val invoker = clazz.getMethod("routes2File", classOf[String])
