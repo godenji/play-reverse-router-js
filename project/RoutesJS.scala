@@ -3,32 +3,33 @@ import Keys._
 
 /*
  * task to generate javascript reverse router as static file at compile time
- *
- * note: sbt 0.12 uses scala 2.9 and Play 2.1 uses scala 2.10, thus reflection required
  */
 object RoutesJS extends TaskUtils {
 	val routesJS = TaskKey[Unit]("routesJS", "Generates javascript routes as static file")
 	lazy val routesJSTask = routesJS <<= scalaInstance map { si=>
-		
-		val projectPath 	= System.getProperty("user.dir") + "/"
-		val uiPath 				= projectPath + "/public/javascripts/" // >> change accordingly
 	
+		val projectName		= "reverse-router-js"	
+		val projectPath 	= System.getProperty("user.dir") + "/"
+		val uiPath 				= projectPath + "/public/javascripts/" // change accordingly
+
+  	val sbtDir = "/tmp/sbt" // sbt compile target
 		val targetDir = // project compilation targets to add to classpath
-			"target/scala-"+getBinaryVersion(si)+"/classes/"
+			"scala-"+getBinaryVersion(si)+"/classes/"
 		
+	  // assumes your play installation lives in ~/bin/playframework
 		val playPath = List(new java.net.URL( 
-			// >> specify relative path to Play framework install
-			"file:" + getFrameworkPath("bin/Play22") + targetDir)
-		)
+			"file:"+System.getProperty("user.home")+
+			"/bin/playframework/framework/src/play/"+ targetDir
+		))
 		
 		val appPaths = // i.e. parent project "/" plus "/modules/module-name"
-			(List("/") ++ getModules.map(name=>"/module/"+name+"/")).map(x=>
-				new java.net.URL("file:" + projectPath + x + targetDir)
+			(List(projectName) ++ getModules.map(name=>"/module/"+name+"/")).map(x=>
+				new java.net.URL(
+					"file:" + List(sbtDir, module, targetDir).mkString("/")
+				)
 			)
 			
-		val classPath = (appPaths ++ playPath).toArray
-		//classprojectPath foreach println
-		
+		val classPath = (appPaths ++ playPath).toArray	
 		val appLoader: ClassLoader = new java.net.URLClassLoader(classPath, si.loader)
 		val clazz = appLoader.loadClass("controllers.jsRoutes")
 		val invoker = clazz.getMethod("routes2File", classOf[String])
