@@ -22,13 +22,6 @@ trait TaskUtils {
   	}.flatten
   }
 	
-	def getFrameworkPath(relPath: String) = {
-		def addSlashes(s: String) = (
-			if(s.startsWith("/")) s else "/" + s) + (if(s.endsWith("/")) "" else "/"
-		)
-		System.getProperty("user.home") + addSlashes(relPath) + "framework/src/play/"
-	}
-	
 	def getBinaryVersion(si: sbt.ScalaInstance) = {
 		si.actualVersion.split("\\.").dropRight(1).mkString(".")
 	}
