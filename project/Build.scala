@@ -8,20 +8,15 @@ object ApplicationBuild extends Build {
   val appName         = "reverse-router-js"
   val appVersion      = "1.1"
 
-  lazy val common = play.Project(
-  	appName + "-common", appVersion, path = file("module/common"))
- 		
   lazy val foo = play.Project(
-  	appName + "-foo", appVersion, path = file("module/foo")).
-  	dependsOn(common)
+  	appName + "-foo", appVersion, path = file("module/foo"))
 
   lazy val bar = play.Project(
-  	appName + "-bar", appVersion, path = file("module/bar")).
-  	dependsOn(common)
+  	appName + "-bar", appVersion, path = file("module/bar"))
 
   lazy val aaMain  = play.Project(appName + "-main", appVersion).settings(
 		routesJSTask
   ).
-  dependsOn(common,foo,bar).aggregate(common,foo,bar)
+  dependsOn(foo,bar).aggregate(foo,bar)
 
 }
