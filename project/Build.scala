@@ -6,7 +6,7 @@ object ApplicationBuild extends Build {
 	import RoutesJS._
 
   val appName         = "reverse-router-js"
-  val appVersion      = "1.0"
+  val appVersion      = "1.1"
 
   lazy val common = play.Project(
   	appName + "-common", appVersion, path = file("module/common"))
